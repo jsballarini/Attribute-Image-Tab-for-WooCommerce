@@ -53,6 +53,14 @@ For support, please open an issue on GitHub or contact us through the official w
 
 == Changelog ==
 
+= 0.0.6 - 2024-03-19 =
+* Atualizado "Tested up to" para WordPress 6.8
+* Corrigido formato do arquivo readme.txt para padrão WordPress.org
+* Removido número de versão menor do campo "Tested up to"
+* Melhorado formato das seções do readme
+* Adicionada seção de Features
+* Atualizado formato do Changelog
+
 = 0.0.5 - 2024-03-19 =
 * Fixed text domain to match plugin slug
 * Added proper escaping for all output
