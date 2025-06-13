@@ -1,44 +1,44 @@
 # Changelog
 
-Todas as alterações notáveis neste projeto serão documentadas neste arquivo.
+All notable changes to this project will be documented in this file.
 
-O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
-e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.0.4] - 2025-06-13
 
-### Adicionado
-- Suporte a internacionalização (i18n)
-- Tradução para inglês (en_US)
+### Added
+- Internationalization (i18n) support
+- English (en_US) and Portuguese (pt_BR) translations
 
-### Alterado
-- URLs do plugin e autor atualizadas para ballarini.com.br
-- Ajuste no layout da label 'Imagem da Aba' na interface administrativa
+### Changed
+- Plugin and author URLs updated to ballarini.com.br
+- Improved 'Tab Image' label layout in admin interface
 
 ## [0.0.3] - 2025-06-13
 
-### Corrigido
-- Compatibilidade com HPOS (High-Performance Order Storage) do WooCommerce
+### Fixed
+- Compatibility with WooCommerce HPOS (High-Performance Order Storage)
 
 ## [0.0.2] - 2025-06-13
 
-### Alterado
-- Informações do autor atualizadas
+### Changed
+- Updated author information
 
 ## [0.0.1] - 2025-06-13
 
-### Adicionado
-- Funcionalidade para adicionar uma nova aba personalizada nos produtos do WooCommerce
-- Campo para definir o título da nova aba
-- Suporte para upload e seleção de imagens da biblioteca de mídia
-- Interface administrativa na página de edição do produto
-- Estilos CSS para a exibição da imagem no frontend
-- Documentação completa no README.md
-- Suporte ao recurso HPOS (High-Performance Order Storage) do WooCommerce
+### Added
+- Initial functionality for adding custom tabs to WooCommerce products
+- Field for setting the new tab title
+- Support for uploading and selecting images from media library
+- Admin interface on product edit page
+- CSS styles for frontend image display
+- Complete documentation in README.md
+- Support for WooCommerce HPOS (High-Performance Order Storage)
 
-### Técnico
-- Implementação do gerenciador de mídia do WordPress
-- Validação de segurança para salvamento dos dados
-- Verificação de compatibilidade com WooCommerce
-- Estrutura base do plugin seguindo as melhores práticas do WordPress
-- Declaração de compatibilidade com custom_order_tables
+### Technical
+- WordPress media manager implementation
+- Security validation for data saving
+- WooCommerce compatibility check
+- Base plugin structure following WordPress best practices
+- Custom order tables compatibility declaration
