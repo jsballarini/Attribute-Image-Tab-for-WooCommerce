@@ -28,7 +28,7 @@ This plugin adds a custom tab to WooCommerce products, allowing you to add a spe
 
 ## Support
 
-For support, please open an issue on GitHub or contact us through the official website at [ballarini.com.br](https://ballarini.com.br).
+For support, please open an issue on GitHub or contact us through the official website at [github.com/jsballarini](https://github.com/jsballarini/).
 
 ## License
 
