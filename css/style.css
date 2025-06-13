@@ -1,0 +1,42 @@
+.attribute-image-field {
+    padding: 1em 0;
+}
+.form-field.attribute-image-field {
+    margin-left: 30px;
+}
+
+.attribute-image-field label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.image-preview-wrapper {
+    margin: 1em 0;
+}
+
+.image-preview {
+    max-width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 1em;
+}
+
+.remove_image_button {
+    margin-left: 10px;
+}
+
+/* Estilo para a aba no frontend */
+.attribute-image-tab-content {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.attribute-image-tab-img {
+    max-width: 100%;
+    height: auto;
+} 
+.attribute-image-label {
+    margin: 0 0 0 0px !important;
+}

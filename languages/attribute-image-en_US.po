@@ -1,0 +1,52 @@
+# Copyright (C) 2025 Juliano Ballarini
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Attribute Image Tab for WooCommerce 0.0.4\n"
+"Report-Msgid-Bugs-To: https://ballarini.com.br\n"
+"POT-Creation-Date: 2025-06-13\n"
+"PO-Revision-Date: 2025-06-13\n"
+"Last-Translator: Juliano Ballarini\n"
+"Language-Team: Juliano Ballarini\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: attribute-image.php
+msgid "Attribute Image Tab requer que o WooCommerce esteja instalado e ativo."
+msgstr "Attribute Image Tab requires WooCommerce to be installed and active."
+
+#: attribute-image.php
+msgid "Atributos Adicionais"
+msgstr "Additional Attributes"
+
+#: attribute-image.php
+msgid "Título da Nova Aba"
+msgstr "New Tab Title"
+
+#: attribute-image.php
+msgid "Digite o título da nova aba"
+msgstr "Enter the new tab title"
+
+#: attribute-image.php
+msgid "Este título será exibido na nova aba do produto."
+msgstr "This title will be displayed in the product's new tab."
+
+#: attribute-image.php
+msgid "Imagem da Aba"
+msgstr "Tab Image"
+
+#: attribute-image.php
+msgid "Upload/Selecionar Imagem"
+msgstr "Upload/Select Image"
+
+#: attribute-image.php
+msgid "Remover Imagem"
+msgstr "Remove Image"
+
+#: attribute-image.php
+msgid "Informações Adicionais"
+msgstr "Additional Information" 
