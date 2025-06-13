@@ -32,9 +32,26 @@ For support, please open an issue on GitHub or contact us through the official w
 
 ## License
 
-This plugin is licensed under GPL v2 or later.
+This plugin is licensed under [GPL v2 or later](https://www.gnu.org/licenses/gpl-2.0.html).
+
+## WordPress.org Plugin Information
+
+* Tested up to: 6.4.3
+* Stable tag: 0.0.5
+* Requires PHP: 7.2
+* License: GPLv2 or later
+* License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Changelog
+
+### 0.0.5 - 2024-03-19
+- Fixed text domain to match plugin slug
+- Added proper escaping for all output
+- Added nonce verification for form submissions
+- Added proper sanitization for POST data
+- Updated plugin and author URLs
+- Added lazy loading for images
+- Added proper wp_kses_post for image output
 
 ### 0.0.4
 - Plugin and author URLs updated
