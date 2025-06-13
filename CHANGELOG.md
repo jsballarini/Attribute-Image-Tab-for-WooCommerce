@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - English (en_US) and Portuguese (pt_BR) translations
 
 ### Changed
+<<<<<<< HEAD
+- Plugin and author URLs updated to https://github.com/jsballarini
+=======
+>>>>>>> 83b16a00ae4917d4539a50961c19fb0a1e95b7b1
 - Improved 'Tab Image' label layout in admin interface
 
 ## [0.0.3] - 2025-06-13
