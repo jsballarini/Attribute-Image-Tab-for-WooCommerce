@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Attribute Image Tab for WooCommerce
- * Plugin URI: #
+ * Plugin URI: https://github.com/jsballarini
  * Description: Adds a new tab to WooCommerce products with a custom image.
  * Version: 0.0.4
  * Author: Juliano Ballarini
- * Author URI: #
+ * Author URI: https://github.com/jsballarini
  * Text Domain: attribute-image
  * Domain Path: /languages
  * Requires at least: 5.8
