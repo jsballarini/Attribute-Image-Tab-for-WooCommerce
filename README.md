@@ -1,53 +1,55 @@
 # Attribute Image Tab for WooCommerce
 
-Este plugin adiciona uma nova aba personalizada nos produtos do WooCommerce, permitindo que você adicione uma imagem específica que será exibida nesta aba.
+This plugin adds a custom tab to WooCommerce products, allowing you to add a specific image that will be displayed in this tab.
 
-## Requisitos
+## Requirements
 
-- WordPress 5.8 ou superior
-- WooCommerce 5.0 ou superior
-- PHP 7.2 ou superior
+- WordPress 5.8 or higher
+- WooCommerce 5.0 or higher
+- PHP 7.2 or higher
 
-## Instalação
+## Installation
 
-1. Faça o download do plugin
-2. Acesse o painel administrativo do WordPress
-3. Navegue até Plugins > Adicionar Novo > Enviar Plugin
-4. Escolha o arquivo ZIP do plugin e clique em "Instalar Agora"
-5. Após a instalação, clique em "Ativar"
+1. Download the plugin
+2. Access your WordPress admin panel
+3. Navigate to Plugins > Add New > Upload Plugin
+4. Choose the plugin ZIP file and click "Install Now"
+5. After installation, click "Activate"
 
-## Como Usar
+## How to Use
 
-1. Acesse o painel administrativo do WordPress
-2. Edite um produto existente ou crie um novo produto
-3. Na página de edição do produto, localize a aba "Atributos Adicionais"
-4. Defina um título para a nova aba do produto
-5. Faça upload ou selecione uma imagem da biblioteca de mídia
-6. Salve o produto
-7. Visualize o produto no frontend para ver a nova aba com a imagem
+1. Access your WordPress admin panel
+2. Edit an existing product or create a new one
+3. On the product edit page, locate the "Additional Attributes" tab
+4. Set a title for the product's new tab
+5. Upload or select an image from the media library
+6. Save the product
+7. View the product on the frontend to see the new tab with the image
 
-## Suporte
+## Support
 
-Para suporte, por favor abra uma issue no repositório do GitHub ou entre em contato através do site oficial em [ballarini.com.br](https://ballarini.com.br).
+For support, please open an issue on GitHub or contact us through the official website at [ballarini.com.br](https://ballarini.com.br).
 
-## Licença
+## License
 
-Este plugin está licenciado sob a GPL v2 ou posterior.
+This plugin is licensed under GPL v2 or later.
 
 ## Changelog
 
 ### 0.0.4
-- URLs do plugin e autor atualizadas
-- Melhorias na interface administrativa
+- Plugin and author URLs updated
+- Admin interface improvements
+- Added internationalization (i18n) support
+- Added English (en_US) and Portuguese (pt_BR) translations
 
 ### 0.0.3
-- Correção de compatibilidade com HPOS
+- Fixed HPOS compatibility
 
 ### 0.0.2
-- Atualização das informações do autor
+- Updated author information
 
 ### 0.0.1
-- Lançamento inicial
-- Adição de nova aba personalizada nos produtos
-- Suporte a upload de imagens
-- Interface administrativa intuitiva 
+- Initial release
+- Added custom tab to products
+- Image upload support
+- Intuitive admin interface 

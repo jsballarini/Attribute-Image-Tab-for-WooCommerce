@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Attribute Image Tab for WooCommerce
  * Plugin URI: https://ballarini.com.br
- * Description: Adiciona uma nova aba nos produtos do WooCommerce com uma imagem personalizada.
+ * Description: Adds a new tab to WooCommerce products with a custom image.
  * Version: 0.0.4
  * Author: Juliano Ballarini
  * Author URI: https://ballarini.com.br
@@ -19,19 +19,19 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// Adiciona suporte ao HPOS
+// Add HPOS support
 add_action('before_woocommerce_init', function() {
     if (class_exists('\Automattic\WooCommerce\Utilities\FeaturesUtil')) {
         \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility('custom_order_tables', __FILE__, true);
     }
 });
 
-// Verifica se o WooCommerce está ativo
+// Check if WooCommerce is active
 function attribute_image_check_woocommerce() {
     if (!class_exists('WooCommerce')) {
         add_action('admin_notices', function() {
             echo '<div class="error"><p>' . 
-                 __('Attribute Image Tab requer que o WooCommerce esteja instalado e ativo.', 'attribute-image') . 
+                 __('Attribute Image Tab requires WooCommerce to be installed and active.', 'attribute-image') . 
                  '</p></div>';
         });
         return false;
@@ -39,11 +39,11 @@ function attribute_image_check_woocommerce() {
     return true;
 }
 
-// Adiciona o campo personalizado na edição do produto
+// Add custom field in product edit
 function attribute_image_add_custom_fields() {
     add_action('woocommerce_product_data_tabs', function($tabs) {
         $tabs['attribute_image'] = [
-            'label' => __('Atributos Adicionais', 'attribute-image'),
+            'label' => __('Additional Attributes', 'attribute-image'),
             'target' => 'attribute_image_data',
             'class' => ['hide_if_grouped'],
         ];
@@ -55,29 +55,29 @@ function attribute_image_add_custom_fields() {
         
         woocommerce_wp_text_input([
             'id' => '_custom_tab_title',
-            'label' => __('Título da Nova Aba', 'attribute-image'),
-            'placeholder' => __('Digite o título da nova aba', 'attribute-image'),
+            'label' => __('New Tab Title', 'attribute-image'),
+            'placeholder' => __('Enter the new tab title', 'attribute-image'),
             'desc_tip' => true,
-            'description' => __('Este título será exibido na nova aba do produto.', 'attribute-image')
+            'description' => __('This title will be displayed in the product\'s new tab.', 'attribute-image')
         ]);
 
         echo '<div class="form-field attribute-image-field">';
-        echo ' ' . __('Imagem da Aba', 'attribute-image') . ' ';
+        echo ' ' . __('Tab Image', 'attribute-image') . ' ';
         echo '<div class="image-preview-wrapper">';
         echo '<img src="" style="max-width:100px;display:none;" class="image-preview">';
         echo '</div>';
         echo '<input type="hidden" name="_custom_tab_image" class="custom-tab-image-id" value="">';
         echo '<button type="button" class="upload_image_button button">' . 
-             __('Upload/Selecionar Imagem', 'attribute-image') . '</button>';
+             __('Upload/Select Image', 'attribute-image') . '</button>';
         echo '<button type="button" class="remove_image_button button" style="display:none">' . 
-             __('Remover Imagem', 'attribute-image') . '</button>';
+             __('Remove Image', 'attribute-image') . '</button>';
         echo '</div>';
         
         echo '</div>';
     });
 }
 
-// Salva os campos personalizados
+// Save custom fields
 function attribute_image_save_custom_fields($post_id) {
     if (isset($_POST['_custom_tab_title'])) {
         update_post_meta($post_id, '_custom_tab_title', sanitize_text_field($_POST['_custom_tab_title']));
@@ -87,13 +87,13 @@ function attribute_image_save_custom_fields($post_id) {
     }
 }
 
-// Adiciona a nova aba no frontend
+// Add custom tab in frontend
 function attribute_image_add_custom_tab($tabs) {
     global $post;
     
     $tab_title = get_post_meta($post->ID, '_custom_tab_title', true);
     if (empty($tab_title)) {
-        $tab_title = __('Informações Adicionais', 'attribute-image');
+        $tab_title = __('Additional Information', 'attribute-image');
     }
     
     $image_id = get_post_meta($post->ID, '_custom_tab_image', true);
@@ -108,7 +108,7 @@ function attribute_image_add_custom_tab($tabs) {
     return $tabs;
 }
 
-// Conteúdo da nova aba
+// Custom tab content
 function attribute_image_tab_content() {
     global $post;
     
@@ -121,7 +121,7 @@ function attribute_image_tab_content() {
     }
 }
 
-// Adiciona os scripts necessários
+// Add necessary scripts
 function attribute_image_admin_scripts() {
     wp_enqueue_media();
     
@@ -129,12 +129,12 @@ function attribute_image_admin_scripts() {
         'attribute-image-admin',
         plugins_url('js/admin.js', __FILE__),
         ['jquery'],
-        '1.0.0',
+        '0.0.4',
         true
     );
 }
 
-// Inicializa o plugin
+// Initialize plugin
 function attribute_image_init() {
     if (!attribute_image_check_woocommerce()) {
         return;
