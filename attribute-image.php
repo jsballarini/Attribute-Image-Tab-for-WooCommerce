@@ -66,7 +66,7 @@ function attribute_image_add_custom_fields() {
         echo '<div class="form-field attribute-image-field">';
         echo ' ' . esc_html__('Tab Image', 'attribute-image-tab-for-woocommerce') . ' ';
         echo '<div class="image-preview-wrapper">';
-        echo '<img src="" style="max-width:100px;display:none;" class="image-preview">';
+        echo '<div class="custom-img-container" style="max-width:100px;"></div>';
         echo '</div>';
         echo '<input type="hidden" name="_custom_tab_image" class="custom-tab-image-id" value="">';
         echo '<button type="button" class="upload_image_button button">' . 
@@ -82,17 +82,25 @@ function attribute_image_add_custom_fields() {
 // Save custom fields
 function attribute_image_save_custom_fields($post_id) {
     // Check if our nonce is set and verify it
-    if (!isset($_POST['attribute_image_nonce']) || !wp_verify_nonce($_POST['attribute_image_nonce'], 'attribute_image_save_data')) {
+    if (!isset($_POST['attribute_image_nonce'])) {
         return;
     }
 
-    if (isset($_POST['_custom_tab_title'])) {
-        $title = wp_unslash($_POST['_custom_tab_title']);
-        update_post_meta($post_id, '_custom_tab_title', sanitize_text_field($title));
+    $nonce = sanitize_text_field(wp_unslash($_POST['attribute_image_nonce']));
+    if (!wp_verify_nonce($nonce, 'attribute_image_save_data')) {
+        return;
     }
+
+    // Save custom tab title if set
+    if (isset($_POST['_custom_tab_title'])) {
+        $title = sanitize_text_field(wp_unslash($_POST['_custom_tab_title']));
+        update_post_meta($post_id, '_custom_tab_title', $title);
+    }
+
+    // Save custom tab image if set
     if (isset($_POST['_custom_tab_image'])) {
-        $image = wp_unslash($_POST['_custom_tab_image']);
-        update_post_meta($post_id, '_custom_tab_image', absint($image));
+        $image_id = absint(wp_unslash($_POST['_custom_tab_image']));
+        update_post_meta($post_id, '_custom_tab_image', $image_id);
     }
 }
 
