@@ -1,5 +1,5 @@
 === Attribute Image Tab for WooCommerce ===
-Contributors: jsballarini
+Contributors: julianosb
 Tags: woocommerce, product tabs, product images, attributes, product gallery
 Requires at least: 5.8
 Tested up to: 6.8
